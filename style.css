@@ -1,0 +1,207 @@
+/* Utility classes */
+.animate {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+.animate.animate--fast {
+    animation-duration: 0.6s;
+}
+.animate.animate--slow {
+    animation-duration: 3s;
+}
+/* Animations */
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-300px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+.slideInLeft {
+    animation-name: slideInLeft;
+    animation-timing-function: ease-in;
+}
+@keyframes slideInRight {
+    from {
+        transform: translateX(300px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+.slideInRight {
+    animation-name: slideInRight;
+    animation-timing-function: ease-in;
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+.bounce {
+    animation-name: bounce;
+    animation-duration: 3s;
+}
+/* Logo image on home page */
+#content {
+    position: relative;
+}
+#content img {
+    position: absolute;
+    top: -110px;
+    right: -220px;
+}
+/* Logo image on other pages */
+#content1 {
+    position: relative;
+}
+#content1 img {
+    position: absolute;
+    top: -80px;
+    right: -160px;
+}
+/* Style tab buttons */
+.tabButton {
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 0.5em 1em;
+    color: #FFBD59;
+    background-color: var(--clr-rgba);
+    border: 10px solid var(--clr-accent);
+    border-radius: 5px;
+  
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+.tabButton:hover {
+    transform: translateY(-10px);
+}
+/* Style 'Learn More' button */
+button {
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    border: none;
+    color: #0E0022;
+    background: #FFBD59;
+    cursor: pointer;
+    border-radius: 50px;
+}
+button:hover {
+    background: #fff;
+    color: #FFBD59;
+}
+/* Style main page */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+nav {
+    height: 130px;
+    background: #0E0022;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem calc((100vw - 1300px) / 2);
+}
+nav a {
+    text-decoration: none;
+    color: #FFBD59;
+    padding: 0 1.5rem;
+}
+.start {
+    background: #0E0022;
+}
+.start-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 95vh;
+    padding: 3rem calc((100vw - 1300px) / 2);
+}
+.column-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #FFBD59;
+    padding: 0rem 2rem;
+}
+.column-left h1 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+.column-left p {
+    margin-bottom: 2.5rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+.column-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 2rem;
+}
+/* Shape image in main */
+.start-image {
+    width: 110%;
+    height: 90%;
+}
+.topTitle {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 45px;
+    color: #FFBD59;
+}
+.topTitle1 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 35px;
+    font-family: futura;
+    color: #FFBD59;
+}
+.writingContact {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    color: #FFBD59;
+}
+.writingAbout {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: #FFBD59;
+}
+.bcoverAbout {
+    background-image: url(img2.png);
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    padding: 3rem calc((100vw - 1300px) / 2);
+}
+.bcoverContact {
+    background-image: url(img3.png);
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    padding: 3rem calc((100vw - 1300px) / 2);
+}
