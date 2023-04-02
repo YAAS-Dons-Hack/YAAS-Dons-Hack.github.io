@@ -22,33 +22,102 @@
 
     <!-- Create About page -->
     <section class="start">
+      <div class="bcoverAbout"></div>
         <div class="writingAbout">
-          <center><h1 class="animate__animated animate__fadeInDown"> Tired of scrolling through CS manuals? </h1><br>
-          <p class="animate__animated animate__fadeInDown"> Stuck on coding or unsure about Java syntax?
-          <br><br> Well look no further!
-          <br><br> Ask unlimited questions and recieve fast 
-          responses from an interactive manual that gets you saying 
-          <br><br>
-          ...<br><br>
-          <p style="font-size: 60px"; class="animate__animated animate__fadeInDown">YAAS!</p><br><hr><br>
-          <h1> How to Use </h1><br>
-          <p>Login to any terminal on your computer.<br>
-          <br>Enter 'tgpt [command]'<br><br>
-          Chill back and relax till the AI does the work and searches up your keyword for you.
-          </p><br><hr><br>
-          <h1>Limitations</h1><br>
-          <p>By default, tgpt will provide an answer using 150 words.</p>
-          </p><br><hr><br>
-          <h1>Guidelines</h1><br>
-          <p>If you want the AI to give you an answer using more words, you can<br><br>Enter 'tgpt [command] -l'<br><br>
-          which sets the word limit to 500. If you want to specify the size, you can enter<br><br>'tgpt [command] -s [size]'
-          <br><br>to specify the length of the output.
-          If for some reason the AI does not cooperate or if you are not satified with your answer you can enter<br><br>
-          'tgpt [command] -f'<br><br>
-          to force the AI to provide you with an answer.
-          </p>
-        </div>
-        <div class="bcoverAbout"></div>
+          <center>
+            <h1 class="animate__animated animate__fadeInUp"; style="color: #FFBD59;">
+              What is tgpt?
+            </h1><br>
+            <h4 class="animate__animated animate__fadeInUp";>
+              tgpt is a terminal based program that generates descriptive usage of specific commands.
+              <br><br><hr>
+            </h4>
+          </center>
+          <br>
+          <center>
+            <h1 class="animate__animated animate__fadeInUp animate__delay-2s"; style="color: #FFBD59;">
+              Why would you need tgpt?
+            </h1><br>
+            <h4 class="animate__animated animate__fadeInUp animate__delay-2s";>
+              tgpt is useful for giving you fast and accurate responses in less than half the time 
+              it would take you to search and read through the manuals. 
+            </h4><br>
+            <h4 class="animate__animated animate__fadeInUp animate__delay-2s";>
+              You can ask our interactive manual an unlimited amount of questions, 
+              providing you with answers that gets you saying ...
+              YAAS!
+              <br><br><hr>
+            </h4>
+          </center>
+          <br>
+          <center>
+            <h1 class="animate__animated animate__fadeInUp animate__delay-3s"; style="color: #FFBD59;">
+              Installation
+            </h1><br>
+          </center>
+            <h4 class="animate__animated animate__fadeInUp animate__delay-3s"; style="color: #fae6e6">
+              $ git clone https://github.com/YAAS-Dons-Hack/tgpt.git<br>
+              $ cd tgpt<br>
+              $ make install<br>
+              <br><br><hr>
+            </h4>
+          <br>
+          <center>
+            <h1 class="animate__animated animate__fadeInUp animate__delay-4s"; style="color: #FFBD59;">
+              Usage
+            </h1><br>
+            <h4 class="animate__animated animate__fadeInUp animate__delay-4s";>
+          </center>
+            <h4 class="animate__animated animate__fadeInUp animate__delay-4s";>
+              To use this program, you need an OpenAI API key. To add the key as an environment variable, 
+              run the following in the shell:<br></h4>
+              <h4 class="animate__animated animate__fadeInUp animate__delay-4s"; style="color: #fae6e6">
+              $ echo "export OPENAI_API_KEY='yourkey'" >> ~/.bashrc<br>
+              $ source ~/.bashrc<br>
+              $ exec bash<br>
+              </h4>
+              <h5 class="animate__animated animate__fadeInUp animate__delay-4s";>
+              Then, you can execute by running:<br></h5>
+              <h5 class="animate__animated animate__fadeInUp animate__delay-4s"; style="color: #fae6e6">
+                <h5 class="animate__animated animate__fadeInUp animate__delay-4s";>$ tgpt [command] [options]<br><br></h5>
+              </h4>
+              <h5 class="animate__animated animate__fadeInUp animate__delay-4s";>Options:</h5><br>
+              <h4 class="animate__animated animate__fadeInUp animate__delay-4s"; style="color: #FFBD59">
+              -f: force to run the command without checking<br>
+              -l: set output size to 500 words (default: 150)<br>
+              -s [size]: manually set output size<br>
+              <br><br><hr>
+              </h4>
+            </h4>
+          <br>
+          <center>
+            <h1 class="animate__animated animate__fadeInUp animate__delay-5s"; style="color: #FFBD59;">Contribute</h1><br>
+          </center>
+          <center><b class="animate__animated animate__fadeInUp animate__delay-5s";>Environment</b><br></center>
+          <h4 class="animate__animated animate__fadeInUp animate__delay-5s"; style="color: #fae6e6">
+            $ git clone https://github.com/YAAS-Dons-Hack/tgpt.git<br>
+            $ cd tgpt<br>
+            $ npm install<br>
+            </h4>
+          <center><b class="animate__animated animate__fadeInUp animate__delay-5s";>Make rules</b><br></center>
+          <h4 class="animate__animated animate__fadeInUp animate__delay-5s";>
+            Compile<br>
+          </h4>
+          <h4 class="animate__animated animate__fadeInUp animate__delay-5s"; style="color: #fae6e6">
+            $ make<br>
+          </h4>
+          <h4 class="animate__animated animate__fadeInUp animate__delay-5s";>
+            Execute<br>
+          </h4>
+          <h4 class="animate__animated animate__fadeInUp animate__delay-5s"; style="color: #fae6e6">
+            $ make run ARG=foobar<br>
+          </h4>
+          <h4 class="animate__animated animate__fadeInUp animate__delay-5s";>
+            Clean up
+          </h4>
+          <h4 class="animate__animated animate__fadeInUp animate__delay-5s"; style="color: #fae6e6">
+            $ make clean<br>
+          </h4>
       </div>
     </section>
   </body>
